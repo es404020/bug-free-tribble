@@ -30,7 +30,7 @@ if choice == "Upload":
     file = st.file_uploader("Upload Your Dataset here")
     if file:
         df = pd.read_csv(file,index_col=None)
-        # df.to_csv(str(file.name),index=None)
+       
         df.to_csv("file.csv",index=None)
         st.dataframe(df)
         
