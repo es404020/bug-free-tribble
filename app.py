@@ -25,12 +25,12 @@ with st.sidebar:
 #     df = pd.read_csv("file.csv",index_col=None)
 #     st.dataframe(df)
 
-
+global df
 if choice == "Upload":
     st.title("Upload your Data for modelling")
     file = st.file_uploader("Upload Your Dataset here")
     if file:
-        global df
+      
         df = pd.read_csv(file, index_col=None)
 
         df.to_csv("file.csv", index=None)
