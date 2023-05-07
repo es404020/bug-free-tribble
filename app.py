@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-import pandas_profiling
+import pandas-profiling
 
 
 # import ydata_profiling
