@@ -1,13 +1,13 @@
 
 import streamlit as st
 import pandas as pd
-import pandas-profiling
+# import pandas_profiling
 
 
-# import ydata_profiling
-# from streamlit_pandas_profiling import st_profile_report
+import ydata_profiling
+from streamlit_pandas_profiling import st_profile_report
 
-# from pycaret.regression import setup, pull, compare_models, save_model
+from pycaret.regression import setup, pull, compare_models, save_model
 
 # # from numba.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
 # import warnings
