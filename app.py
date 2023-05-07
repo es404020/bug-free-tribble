@@ -21,8 +21,8 @@ with st.sidebar:
 
 
 
-df = pd.read_csv("file.csv",index_col=None)
-st.dataframe(df)
+# df = pd.read_csv("file.csv",index_col=None)
+# st.dataframe(df)
 
 
 if choice == "Upload":
