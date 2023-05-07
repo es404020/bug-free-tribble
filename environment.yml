@@ -6,3 +6,4 @@ dependencies:
     - pandas
     - ydata-profiling
     - pycaret.regression
+    - streamlit_pandas_profiling
