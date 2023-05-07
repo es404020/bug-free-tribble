@@ -43,20 +43,20 @@ if choice == "Profiling":
     st_profile_report(profile_report)
 
 
-# if choice == "ML":
-#     st.title("Machine learning")
-#     target = st.selectbox("Pick your target variable", df.columns)
+if choice == "ML":
+    st.title("Machine learning")
+    target = st.selectbox("Pick your target variable", df.columns)
 
-#     setup(data=df, target=target, silent=True)
-#     setup_df = pull()
-#     st.info("This is the ML experiment settings")
-#     st.dataframe(setup_df)
-#     best_model = compare_models()
-#     compare_df = pull()
-#     st.info("This is the ML Model")
-#     st.dataframe(compare_df)
-#     best_model
-#     save_model(best_model, 'best_model')
+    setup(data=df, target=target, silent=True)
+    setup_df = pull()
+    st.info("This is the ML experiment settings")
+    st.dataframe(setup_df)
+    best_model = compare_models()
+    compare_df = pull()
+    st.info("This is the ML Model")
+    st.dataframe(compare_df)
+    best_model
+    save_model(best_model, 'best_model')
 
 
 # if choice == "Download":
