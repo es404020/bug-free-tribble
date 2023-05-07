@@ -14,7 +14,7 @@ from pycaret.regression import setup, pull, compare_models, save_model
 
 # warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
 # warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
-
+global df 
 with st.sidebar:
     st.title('RegML')
     choice = st.radio("Navigation", ["Upload", "Profiling", "ML", "Download"])
@@ -24,8 +24,8 @@ with st.sidebar:
 # if os.path.exists("file.csv"):
 #     df = pd.read_csv("file.csv",index_col=None)
 #     st.dataframe(df)
+df = pd.DataFrame()
 
-global df
 if choice == "Upload":
     st.title("Upload your Data for modelling")
     file = st.file_uploader("Upload Your Dataset here")
