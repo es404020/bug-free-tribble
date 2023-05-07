@@ -8,7 +8,6 @@ from streamlit_pandas_profiling import st_profile_report
 
 from pycaret.regression import setup, pull, compare_models, save_model
 
-import os
 # from numba.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
 # import warnings
 
@@ -21,9 +20,9 @@ with st.sidebar:
     st.info("This application allow you  build an automated ML pipeline using streamlit,Pandas Profiling and PyCaret")
 
 
-if os.path.exists("file.csv"):
-    df = pd.read_csv("file.csv",index_col=None)
-    st.dataframe(df)
+
+df = pd.read_csv("file.csv",index_col=None)
+st.dataframe(df)
 
 
 if choice == "Upload":
