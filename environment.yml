@@ -4,5 +4,5 @@ dependencies:
   pip:
     - streamlit
     - pandas
-    - ydata_profiling
+    - pandas_profiling
     - pycaret.regression
