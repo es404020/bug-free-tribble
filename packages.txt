@@ -2,4 +2,3 @@ pandas
 ydata-profiling
 streamlit-pandas-profiling 
 pycaret
-os
