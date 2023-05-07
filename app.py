@@ -8,23 +8,23 @@ from streamlit_pandas_profiling import st_profile_report
 
 from pycaret.regression import setup, pull, compare_models, save_model
 
-
+import os
 # from numba.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
 # import warnings
 
 # warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
 # warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
-global df 
+
 with st.sidebar:
     st.title('RegML')
     choice = st.radio("Navigation", ["Upload", "Profiling", "ML", "Download"])
     st.info("This application allow you  build an automated ML pipeline using streamlit,Pandas Profiling and PyCaret")
 
 
-# if os.path.exists("file.csv"):
-#     df = pd.read_csv("file.csv",index_col=None)
-#     st.dataframe(df)
-df = pd.DataFrame()
+if os.path.exists("file.csv"):
+    df = pd.read_csv("file.csv",index_col=None)
+    st.dataframe(df)
+
 
 if choice == "Upload":
     st.title("Upload your Data for modelling")
