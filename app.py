@@ -1,6 +1,7 @@
 
 import streamlit as st
 import pandas as pd
+import pandas_profiling
 
 
 # import ydata_profiling
@@ -36,10 +37,10 @@ if choice == "Upload":
         st.dataframe(df)
 
 
-# if choice == "Profiling":
-#     st.title("Automated Exploratory Data Analysis ")
-#     profile_report = df.profile_report()
-#     st_profile_report(profile_report)
+if choice == "Profiling":
+    st.title("Automated Exploratory Data Analysis ")
+    profile_report = df.profile_report()
+    st_profile_report(profile_report)
 
 
 # if choice == "ML":
