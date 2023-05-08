@@ -14,7 +14,8 @@ from pycaret.regression import setup, pull, compare_models, save_model
 
 # warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
 # warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
-
+# Setup file upload
+global df
 with st.sidebar:
     st.title('RegML')
     choice = st.radio("Navigation", ["Upload", "Profiling", "ML", "Download"])
