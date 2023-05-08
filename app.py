@@ -54,7 +54,7 @@ if choice == "ML":
     st.title("Machine learning")
     target = st.selectbox("Pick your target variable", df.columns)
 
-    setup(data=df, target=target, silent=True)
+    setup(data=df, target=target)
     setup_df = pull()
     st.info("This is the ML experiment settings")
     st.dataframe(setup_df)
